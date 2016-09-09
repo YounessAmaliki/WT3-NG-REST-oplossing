@@ -7,7 +7,7 @@ public class Product {
 	
 	private String name;
 	private String regisseur;
-	private String[] acteurs;
+	private String acteurs;
 
 	
 
@@ -24,10 +24,10 @@ public class Product {
 	public void setRegisseur(String regisseur) {
 		this.regisseur = regisseur;
 	}
-	public String[] getActeurs() {
+	public String getActeurs() {
 		return acteurs;
 	}
-	public void setActeurs(String[] acteurs) {
+	public void setActeurs(String acteurs) {
 		this.acteurs = acteurs;
 	}
 	

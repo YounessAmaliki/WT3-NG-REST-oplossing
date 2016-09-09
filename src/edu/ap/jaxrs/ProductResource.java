@@ -18,7 +18,7 @@ public class ProductResource {
 		try {
 			JAXBContext jaxbContext1 = JAXBContext.newInstance(ProductsXML.class);
 			Unmarshaller jaxbUnmarshaller = jaxbContext1.createUnmarshaller();
-			File XMLfile = new File("/Users/Majid0202/Dropbox/Workspaces/Majid0202-NB/eclipse_workspace/WT3-NG-REST-oplossing/Products.xml");
+			File XMLfile = new File("/Users/Majid0202/Desktop/Products.xml");
 			ProductsXML productsXML = (ProductsXML)jaxbUnmarshaller.unmarshal(XMLfile);
 			ArrayList<Product> listOfProducts = productsXML.getProducts();
 			
@@ -42,7 +42,7 @@ public class ProductResource {
 		try {
 			JAXBContext jaxbContext1 = JAXBContext.newInstance(ProductsXML.class);
 			Unmarshaller jaxbUnmarshaller = jaxbContext1.createUnmarshaller();
-			File XMLfile = new File("/Users/Majid0202/Dropbox/Workspaces/Majid0202-NB/eclipse_workspace/WT3-NG-REST-oplossing/Products.xml");
+			File XMLfile = new File("/Users/Majid0202/Desktop/Products.xml");
 			ProductsXML productsXML = (ProductsXML)jaxbUnmarshaller.unmarshal(XMLfile);
 			ArrayList<Product> listOfProducts = productsXML.getProducts();
 			
@@ -64,7 +64,7 @@ public class ProductResource {
 	@Produces({"text/xml"})
 	public String getProductsXML() {
 		String content = "";
-		File XMLfile = new File("/Users/Majid0202/Dropbox/Workspaces/Majid0202-NB/eclipse_workspace/WT3-NG-REST-oplossing/Products.xml");
+		File XMLfile = new File("/Users/Majid0202/Desktop/Products.xml");
 		try {
 			content = new Scanner(XMLfile).useDelimiter("\\Z").next();
 		} 
@@ -83,7 +83,7 @@ public class ProductResource {
 			// get all products
 			JAXBContext jaxbContext1 = JAXBContext.newInstance(ProductsXML.class);
 			Unmarshaller jaxbUnmarshaller = jaxbContext1.createUnmarshaller();
-			File XMLfile = new File("/Users/Majid0202/Dropbox/Workspaces/Majid0202-NB/eclipse_workspace/WT3-NG-REST-oplossing/Products.xml");
+			File XMLfile = new File("/Users/Majid0202/Desktop/Products.xml");
 			ProductsXML productsXML = (ProductsXML)jaxbUnmarshaller.unmarshal(XMLfile);
 			ArrayList<Product> listOfProducts = productsXML.getProducts();
 			
@@ -111,7 +111,7 @@ public class ProductResource {
 			// get all products
 			JAXBContext jaxbContext1 = JAXBContext.newInstance(ProductsXML.class);
 			Unmarshaller jaxbUnmarshaller = jaxbContext1.createUnmarshaller();
-			File XMLfile = new File("/Users/Majid0202/Dropbox/Workspaces/Majid0202-NB/eclipse_workspace/WT3-NG-REST-oplossing/Products.xml");
+			File XMLfile = new File("/Users/Majid0202/Desktop/Products.xml");
 			ProductsXML productsXML = (ProductsXML)jaxbUnmarshaller.unmarshal(XMLfile);
 			ArrayList<Product> listOfProducts = productsXML.getProducts();
 			
@@ -143,7 +143,7 @@ public class ProductResource {
 			// get all products
 			JAXBContext jaxbContext1 = JAXBContext.newInstance(ProductsXML.class);
 			Unmarshaller jaxbUnmarshaller1 = jaxbContext1.createUnmarshaller();
-			File XMLfile = new File("/Users/Majid0202/Dropbox/Workspaces/Majid0202-NB/eclipse_workspace/WT3-NG-REST-oplossing/Products.xml");
+			File XMLfile = new File("/Users/Majid0202/Desktop/Products.xml");
 			ProductsXML productsXML = (ProductsXML)jaxbUnmarshaller1.unmarshal(XMLfile);
 			ArrayList<Product> listOfProducts = productsXML.getProducts();
 			
